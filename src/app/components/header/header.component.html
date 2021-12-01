@@ -1,0 +1,7 @@
+<header>
+  <h1>{{ title | titlecase }}</h1>
+  <app-button [hidden]="!hasRoute('/')"
+    color="{{ toggleAdd ? 'red' : 'green'}}"
+    text="{{ toggleAdd ? 'Close' : 'Add'}}"
+    (btnClick)="toggleClick()"></app-button>
+</header>
